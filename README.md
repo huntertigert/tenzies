@@ -1,8 +1,7 @@
 # Tenzies
 
 A React implementation of the Tenzies dice game. Roll ten dice until they all show the same value. Click a die to hold it in place between rolls. Hold all dice with the same value to win.
-Live Preview: https://tenzies-beta-seven.vercel.app/
-
+<a href="https://tenzies-beta-seven.vercel.app/" target="_blank" rel="noopener noreferrer">Live Preview</a>
 
 ![Tenzies gameplay preview](./preview.png)
 
