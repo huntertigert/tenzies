@@ -1,19 +1,49 @@
-# Getting Started
-Install the dependencies and run the project
-```
+Tenzies
+
+A React implementation of the Tenzies dice game. Roll ten dice until they all show the same value. Click a die to hold it in place between rolls. Hold all dice with the same value to win.
+
+Features
+Ten dice, each with a value and a held state
+Click any die to hold or release it between rolls
+Win detection when every die is held and shows the same value
+Confetti on win
+Focus moves to the “New Game” button when you win, so keyboard users can start a new round right away
+Screen reader announcement when the game is won
+Tech Stack
+React 18
+Vite
+nanoid for unique die IDs
+react-confetti for the win animation
+Getting Started
+Prerequisites
+Node.js (version 18 or later)
+npm (included with Node.js)
+Installation
+bash
+git clone https://github.com/huntertigert/tenzies.git
+cd tenzies
 npm install
-npm start
-```
+Running Locally
+bash
+npm run dev
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Then open the URL Vite prints, usually http://localhost:5173.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+Building for Production
+bash
+npm run build
+npm run preview
+How to Play
+Click Roll to roll all dice.
+Click a die to hold it. Held dice keep their value when you roll.
+Keep rolling and holding until all ten dice show the same number.
+Click New Game to play again.
+Project Structure
+tenzies/
+├── index.html      # Entry HTML, loads Karla font
+├── index.jsx       # React root
+├── App.jsx         # Game state and logic
+├── Die.jsx         # Single die button
+├── index.css       # Styles
+├── vite.config.js  # Vite configuration
+└── package.json
